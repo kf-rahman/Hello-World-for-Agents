@@ -49,7 +49,7 @@ at a time, checks your work, and saves your progress to `save/save.md`.
 
 | # | Module | Time | Learning goal |
 |---|--------|------|---------------|
-| 0 | [Getting Started](modules/00-getting-started/) | 10 min | Explain how an agent differs from a chatbot, and approve or deny its actions safely |
+| 0 | [Getting Started](modules/00-getting-started/) | 10 min | Explain how an agent differs from a chatbot, approve or deny its actions safely, and build a practice project from your own recent work |
 | 1 | [Prompting](modules/01-prompting/) | 25 min | Write prompts an agent can carry out without guessing: outcome, context, constraints, how to confirm it's done |
 | 2 | [Context & Memory](modules/02-context-memory/) | 20 min | Control what the agent knows with memory files and fresh-session handoffs |
 | 3 | [Tools & Skills](modules/03-tools-skills/) | 20 min | Understand how agents act through tools, and package a workflow as a skill |
@@ -64,8 +64,8 @@ AGENTS.md        Course guide instructions (read by most agents)
 CLAUDE.md        Imports AGENTS.md for Claude Code
 GEMINI.md        Imports AGENTS.md for Gemini CLI
 modules/         One folder per module: README (goals and concepts) + exercises/
-projects/        Practice project for each persona (engineer, business)
-workspace/       Where you do the exercises
+projects/        How the guide builds your practice project, plus example scenarios
+workspace/       Your practice project (built in Module 0, not committed to git)
 save/            Your progress file (not committed to git)
 docs/            Setup guide, course design notes, presentation
 ```

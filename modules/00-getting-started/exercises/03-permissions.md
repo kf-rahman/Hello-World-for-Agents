@@ -4,7 +4,7 @@ title: Permissions
 minutes: 3
 skippable: true
 demo: false
-project_slot: P0.2
+project_slot: P0.1
 ---
 
 ## Purpose
@@ -15,12 +15,15 @@ Explain that agents ask before actions that change things or reach outside the
 computer. Tools handle this differently (prompts, modes, allowlists, sandboxes),
 but in every case the learner is the approver.
 
-Give the learner the two `P0.2` requests from their project: one safe action to
+Before starting, **copy the key input file named in `P0.1` to `save/backup/`**
+so it can be restored.
+
+Give the learner the two `P0.1` requests from their project: one safe action to
 **approve** and one destructive action to **deny**. Attempt both through your
 normal tools so that real permission prompts appear. If your tool is in a mode
 that approves actions automatically, say so and describe the prompt they would
 normally see. If they approve the destructive action by mistake, restore the
-file with `git checkout -- <file>` and explain what happened.
+file from `save/backup/` and explain what happened.
 
 Then ask: *"When would you let an agent act without asking you first?"*
 
@@ -30,7 +33,7 @@ Then ask: *"When would you let an agent act without asking you first?"*
 3. Answer the question.
 
 ## Completion check
-- The file named in the destructive request still exists.
+- The key input file still exists in `workspace/`.
 - The learner answered the question.
 
 ## Hints

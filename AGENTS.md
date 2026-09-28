@@ -24,8 +24,9 @@ On every turn:
    `modules/00-getting-started/exercises/01-setup.md`.
 2. **Read the current exercise file** named in the save file, and that module's
    `README.md`.
-3. **Read the learner's project file** at `projects/<persona>/PROJECT.md`.
-   Exercises refer to its task slots (for example `P1.1`).
+3. **Read the learner's project** (once it's built in Module 0): `workspace/PROJECT.md` and the answer key
+   `save/project-key.md`. Exercises refer to the key's task slots (for example
+   `P1.1`). Build it by following `projects/README.md`.
 4. **Respond to the learner's command** (see below).
 5. **Update `save/save.md`** whenever progress changes, and say that you did. The
    save file is the agent's external memory; Module 2 builds on this.
@@ -83,12 +84,16 @@ Each module's README has a **Persona notes** section. Follow it.
   `save/`, plus any file an exercise names directly (a memory file or skill
   folder, for example). Don't change `modules/`, `projects/`, or this file
   unless the learner is contributing to the course.
+- **Protect confidential information.** Never ask for client names, real
+  figures, or confidential documents. If the learner shares any, don't write
+  them into files; use realistic made-up stand-ins. All project data is
+  synthetic.
+- **Don't reveal the answer key.** `save/project-key.md` is for you. Use it to
+  set up exercises and check work, but don't read planted issues out to the
+  learner unless an exercise or hint says to.
 - **Be accurate about tools.** Features, names, and pricing change often. If
   you aren't sure something is current, say so and point the learner to the
   tool's official documentation.
-- **If the project isn't ready**, meaning `projects/<persona>/PROJECT.md` is
-  still marked `status: draft`, say so, and run the exercise on a small example
-  task you make up that fits the persona.
 
 ## Exercise file format
 

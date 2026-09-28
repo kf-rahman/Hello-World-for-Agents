@@ -17,10 +17,6 @@ concepts carry over to other tools.
    running: on your machine or in the cloud?"* Confirm or correct their answer.
 3. Ask them to name **two things from Modules 1 to 4 that would work the same
    way on a different surface**, and **one thing that would be different**.
-4. Optional: if they have access to a second surface (for example, the web
-   version of the same tool), suggest they open this repo there and type
-   `status` to see that their progress carries over, provided the save file
-   was committed.
 
 ## Learner steps
 1. Identify the surface they're on.

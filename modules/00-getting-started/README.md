@@ -4,7 +4,8 @@
 
 ## Learning goal
 The learner can explain how an AI **agent** differs from a chatbot, and can
-safely approve or deny the actions it proposes.
+safely approve or deny the actions it proposes. They leave with a practice
+project built from their own recent work.
 
 ## Objectives
 - Describe the agent loop: *read → plan → act → observe → repeat*.
@@ -36,6 +37,6 @@ Approving everything without reading is the most common beginner mistake.
 ## Exercises
 | # | Exercise | Minutes |
 |---|----------|---------|
-| 1 | [Setup](exercises/01-setup.md) | 3 |
-| 2 | [The Agent Loop](exercises/02-agent-loop.md) | 4 |
+| 1 | [Setup](exercises/01-setup.md) | 2 |
+| 2 | [Build Your Project](exercises/02-build-your-project.md) | 5 |
 | 3 | [Permissions](exercises/03-permissions.md) | 3 |

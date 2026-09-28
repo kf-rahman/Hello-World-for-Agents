@@ -1,4 +1,10 @@
 save/save.md
+save/project-key.md
+save/backup/
 __pycache__/
 *.pyc
 .venv/
+
+# Generated practice projects are personal to each learner
+workspace/*
+!workspace/README.md

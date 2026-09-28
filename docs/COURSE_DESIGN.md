@@ -1,6 +1,6 @@
 # Course Design
 
-Status: **content drafted for all modules. Practice projects not chosen yet.**
+Status: **content drafted for all modules. Not yet tested in a real agent session.**
 
 ## Course learning goal
 By the end, the learner can **hand off a real multi-step task to an AI agent and
@@ -45,11 +45,32 @@ prompt. The guide points this out in Module 2.
 Novices will probably run over on Modules 1 to 3. Adepts can skip the exercises
 marked `skippable: true` (about 30 minutes' worth), which leaves room for that.
 
-## Projects
-Exercises are written without reference to a project and point to **task
-slots** (`P0.1` … `P6.1`). Each persona's project fills those slots. See
-[projects/README.md](../projects/README.md) for the requirements. Both projects
-are **to be decided**.
+## Projects: built from the learner's own work
+There's no fixed practice project. In Module 0, the guide asks the learner
+about **one piece of work from the last two weeks** and generates a small
+project modelled on it, with synthetic data and planted issues. The spec is
+[projects/README.md](../projects/README.md). Anyone who can't think of
+something, or wants to move faster, can pick a scenario from
+[projects/examples.md](../projects/examples.md).
+
+Why:
+- Every learner practices on something that looks like their real job, so the
+  results carry straight over to their work.
+- Watching the agent build the project is the agent-loop demo.
+- Describing their own work to the agent is an early prompting exercise.
+
+How it stays consistent and checkable:
+- Exercises use **task slots** (`P0.1` … `P6.1`). The generated
+  `save/project-key.md` fills every slot, so the exercises never depend on a
+  particular project.
+- Every project must include a way to verify work: **tests** (engineer) or
+  **`CHECKS.md` checks against the source data** (business).
+- **Confidentiality:** the guide asks for the *kind* of work only and never
+  writes real client names, figures, or documents into files. All data is
+  synthetic. `workspace/` is not committed to git.
+
+Risks to watch in testing: how much projects vary between agents and models,
+and whether building the project fits in 5 minutes.
 
 ## Module 4 (MCP) approach
 The focus is the mental model, not building a server: what MCP is, how it
@@ -65,13 +86,13 @@ change quickly, so the content avoids specific version claims, and the guide is
 told to check official docs.
 
 ## Open questions
-1. **Projects:** choose the engineer and business projects, and fill in the slots.
-2. **Business setup:** which tool should business learners use by default?
-   The course needs an agent that can read and write files in the repo (a
-   desktop app, an IDE, or a CLI).
-3. **Module 4 server:** pick one default MCP server that needs no account or
-   API key for each persona.
-4. **Deterministic checks:** add check scripts to each project, or rely on
-   the guide's judgment?
-5. **Live vs self-paced:** will the presentation be given alongside a live run
-   of the course?
+1. **Module 4 server:** pick a default MCP server for each persona (the
+   author is thinking about this).
+2. **Playtest:** run the course in at least two agents, one for each persona,
+   to check timing and consistency, especially for building the project.
+3. **Live vs self-paced:** will the course be run live after the leadership
+   presentation, or only self-paced?
+
+**Decided:** the course doesn't depend on which tool the learner uses; there's
+no default tool for business learners. Projects are generated from the
+learner's own recent work.

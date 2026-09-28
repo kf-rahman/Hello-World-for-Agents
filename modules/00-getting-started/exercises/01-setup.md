@@ -1,7 +1,7 @@
 ---
 id: 0.1
 title: Setup
-minutes: 3
+minutes: 2
 skippable: false
 demo: true
 project_slot: none
@@ -12,7 +12,7 @@ Record who the learner is so the course can adapt, and give the first example of
 an agent taking an action.
 
 ## Guide instructions
-1. In two or three sentences, explain the course: it is turn-based, the learner
+1. In two or three sentences, explain the course: it's turn-based, the learner
    types a command and you take one step, and progress is saved in
    `save/save.md`. Mention the commands `start`, `next`, `hint`, `check`,
    `status`.
@@ -25,16 +25,15 @@ an agent taking an action.
    - Which tool are you using right now? If they aren't sure, work it out and
      confirm with them.
 3. (Demo) Create `save/save.md` from the template and fill in the answers.
-4. Copy the starter files for their persona's project into `workspace/`. If the
-   project is still `status: draft`, tell them.
-5. Point out: *"I just created and edited files. A chatbot can only reply with text;
-   an agent can take actions."*
+4. Point out: *"I just created and edited a file. A chatbot can only reply with
+   text; an agent can take actions."*
 
 ## Learner steps
 1. Answer the questions.
 
 ## Completion check
-`save/save.md` exists with `name`, `experience`, `persona`, and `agent_tool` filled in.
+`save/save.md` exists with `name`, `experience`, `persona`, and `agent_tool`
+filled in.
 
 ## Hints
 1. Just answer the questions. There's nothing to build yet.

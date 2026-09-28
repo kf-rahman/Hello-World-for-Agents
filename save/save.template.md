@@ -10,6 +10,10 @@
 - agent_tool:     <!-- e.g. Claude Code (CLI), Copilot in VS Code, Codex -->
 - started:
 
+## Project
+- scenario:       <!-- three-line summary agreed in Module 0 -->
+- verification:   <!-- e.g. "python -m unittest" or "run CHECKS.md" -->
+
 ## Current position
 - module: 00-getting-started
 - exercise: 01-setup

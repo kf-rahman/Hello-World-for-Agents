@@ -11,8 +11,9 @@ project_slot: P4.1
 Connect one MCP server, use it, and look at what it gives the agent.
 
 ## Guide instructions
-1. Choose a server: use the one named in `P4.1`. If none is set, use a
-   harmless, well-known server. For a business learner in a chat or desktop
+1. Choose a server. `P4.1` names the kind of system that fits the learner's
+   work; if a trusted server for it is available, use that. Otherwise, use a
+   harmless, well-known server that needs no account or API key. For a business learner in a chat or desktop
    app, a built-in connector counts.
 2. Help the learner add it using their tool's method (a command, a settings file,
    or a connectors menu). Look up the current method in the tool's docs rather
