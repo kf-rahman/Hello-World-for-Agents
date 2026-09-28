@@ -29,10 +29,10 @@ learner's project, and look at what it gives the agent.
    description.
 5. The learner gives you the `P4.1` request, and you use the server to do it.
 6. Ask: *"What could go wrong if this server were malicious or had too much
-   access?"
+   access?"*
 7. **Business learners:** remind them the deck is a first draft. They can move
    it to SharePoint (or wherever they keep files) and edit it like any other
-   deck.*
+   deck.
 
 ## Learner steps
 1. Check who publishes the server and what it can access.
