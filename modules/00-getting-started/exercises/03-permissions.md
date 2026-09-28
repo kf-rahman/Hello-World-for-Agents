@@ -18,18 +18,29 @@ but in every case the learner is the approver.
 Before starting, **copy the key input file named in `P0.1` to `save/backup/`**
 so it can be restored.
 
-Give the learner the two `P0.1` requests from their project: one safe action to
-**approve** and one destructive action to **deny**. Attempt both through your
-normal tools so that real permission prompts appear. If your tool is in a mode
-that approves actions automatically, say so and describe the prompt they would
-normally see. If they approve the destructive action by mistake, restore the
-file from `save/backup/` and explain what happened.
+Give the learner the two `P0.1` requests from their project, **one at a
+time**:
+
+1. **Safe action (approve).** Do it through your normal tools so a real
+   permission prompt can appear. Afterwards, ask whether a prompt appeared,
+   and **wait for the answer** before going on.
+2. **Destructive action (deny).**
+   - If a prompt appeared for the safe action, attempt the destructive action
+     normally so the learner can deny it at the prompt.
+   - If **no prompt appeared**, the tool is probably approving actions
+     automatically, and nothing would stop the delete. **Don't attempt it.**
+     Explain that in this mode the file would simply be deleted, describe the
+     prompt they'd see in an "ask first" mode, and suggest switching to that
+     mode while they learn (point them to their tool's docs).
+   - If the file is deleted anyway, restore it from `save/backup/` and explain
+     what happened.
 
 Then ask: *"When would you let an agent act without asking you first?"*
 
 ## Learner steps
-1. Make the safe request and approve it.
-2. Make the destructive request and deny it.
+1. Make the safe request and approve it. Tell the guide whether a prompt appeared.
+2. Make the destructive request and deny it (or, if your tool approves actions
+   automatically, hear why the guide won't attempt it).
 3. Answer the question.
 
 ## Completion check

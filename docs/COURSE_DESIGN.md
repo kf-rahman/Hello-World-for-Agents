@@ -1,6 +1,6 @@
 # Course Design
 
-Status: **content drafted for all modules. Not yet tested in a real agent session.**
+Status: **content drafted for all modules. Modules 0–1 playtested (business persona).**
 
 ## Course learning goal
 By the end, the learner can **hand off a real multi-step task to an AI agent and
@@ -87,12 +87,11 @@ change quickly, so the content avoids specific version claims, and the guide is
 told to check official docs.
 
 ## Open questions
-1. **Playtest:** run the course in at least two agents, one for each persona,
-   to check timing and consistency, especially for building the project.
-2. **Live vs self-paced:** will the course be run live after the leadership
-   presentation, or only self-paced?
+1. **More playtesting:** Modules 0–1 passed with a business learner (see
+   [PLAYTEST.md](PLAYTEST.md)). Still to test: Modules 2–6, the engineer
+   persona, real permission prompts, and a tool other than Claude Code.
 
-**Decided:** the course doesn't depend on which tool the learner uses; there's
+**Decided:** the course is self-paced. It doesn't depend on which tool the learner uses; there's
 no default tool for business learners. Projects are generated from the
 learner's own recent work. Module 4 uses any PowerPoint MCP server that creates
 `.pptx` files (business) and the official Excalidraw server (engineer).
