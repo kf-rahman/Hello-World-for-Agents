@@ -1,0 +1,5 @@
+{
+  "ale": {"qty": 40, "price": 2.0},
+  "mead": {"qty": 12, "price": 5.5},
+  "bread": {"qty": 20, "price": 0.5}
+}

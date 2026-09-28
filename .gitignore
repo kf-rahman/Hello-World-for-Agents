@@ -1,0 +1,4 @@
+save/save.md
+__pycache__/
+*.pyc
+.venv/
