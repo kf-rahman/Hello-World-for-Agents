@@ -71,7 +71,7 @@ Plant something for each slot and describe it in `save/project-key.md`.
 | `P2.1` | 2 | Facts that belong in a memory file: how to run and check the project, conventions, definitions, known issues |
 | `P2.2` | 2 | A task large enough to hand off halfway |
 | `P3.1` | 3 | A repeated workflow that should become a skill (a release checklist, a monthly report) |
-| `P4.1` | 4 | An external system an MCP server could connect this work to (a note of what fits; nothing to build) |
+| `P4.1` | 4 | Business: findings that should become a short slide deck (3–5 slides). Engineer: a system or flow worth diagramming for the docs. |
 | `P6.1` | 6 | A capstone task that uses every module |
 
 Where possible, tie the planted issues to the **slow or error-prone** parts the

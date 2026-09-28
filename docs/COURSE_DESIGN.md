@@ -75,8 +75,9 @@ and whether building the project fits in 5 minutes.
 ## Module 4 (MCP) approach
 The focus is the mental model, not building a server: what MCP is, how it
 differs from an API (and why it isn't "MCP instead of an API"), when to use a
-built-in tool, a skill, or MCP, and security. Then the learner connects one
-server and uses it.
+built-in tool, a skill, or MCP, and security. Then the learner connects a real
+server for their daily work, **PowerPoint** (business) or **Excalidraw**
+(engineer), and uses it on their project.
 
 ## Module 5 (Agent Surfaces) approach
 The focus is on *why* different forms exist (chat and desktop apps, IDE,
@@ -86,8 +87,9 @@ change quickly, so the content avoids specific version claims, and the guide is
 told to check official docs.
 
 ## Open questions
-1. **Module 4 server:** pick a default MCP server for each persona (the
-   author is thinking about this).
+1. **Module 4 PowerPoint server:** choose which community PowerPoint MCP
+   server to recommend (after vetting), or let the guide help each learner
+   choose.
 2. **Playtest:** run the course in at least two agents, one for each persona,
    to check timing and consistency, especially for building the project.
 3. **Live vs self-paced:** will the course be run live after the leadership

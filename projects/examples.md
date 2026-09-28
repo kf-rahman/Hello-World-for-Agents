@@ -16,7 +16,7 @@ A consulting team's quarterly engagement report for a client.
   - P1.2: a regional breakdown (design choice: rank by revenue or by growth).
   - P1.3: a one-page executive summary.
   - P3.1: a "quarterly report" skill.
-  - P4.1: shared drive / CRM.
+  - P4.1: a 3-slide deck of the report's key findings.
   - P6.1: the full Q4 report from new data.
 
 ## Engineer: utilization tracker
@@ -32,5 +32,5 @@ utilization.
     each project).
   - P1.3: an `export` command that writes a CSV.
   - P3.1: a "release checklist" skill.
-  - P4.1: time-tracking system / issue tracker.
+  - P4.1: a diagram of how an entry flows through the tracker.
   - P6.1: team-level reporting.
