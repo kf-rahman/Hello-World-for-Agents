@@ -79,6 +79,8 @@ has deployed AI firm-wide and is moving to agents, and several publish results.
   in the pipeline.
 
 ### Handle with care (speaker notes)
+- **Decision:** name competitors directly. All figures are public information.
+  Cite the source on each slide.
 - Most of these figures are **self-reported by the firms** or reported by the
   press. Say "firms report", not "studies show".
 - Big deployments aren't the same as big results. McKinsey's own research found
@@ -216,10 +218,7 @@ thing BCG tracks with its "hours reinvested" figure.
 3. **Report example:** is there a real recurring deliverable to use as the
    Message 2 example? It could also become the business persona's practice
    project.
-4. **Competitor section:** name competitors directly, or anonymize them (for
-   example "a top-3 strategy firm")? This depends on the audience and whether
-   the deck will be shared outside the firm.
-5. **Logistics:** audience, length, format (Google Slides / PowerPoint /
+4. **Logistics:** audience, length, format (Google Slides / PowerPoint /
    other), live demo or not, and whether the talk goes alongside a live run of
    the course.
 
