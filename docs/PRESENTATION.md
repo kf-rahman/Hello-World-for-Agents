@@ -1,5 +1,7 @@
 # Presentation Outline (placeholder)
 
+> **Superseded:** see [PRESENTATION_BRIEF.md](PRESENTATION_BRIEF.md) for the current key messages and notes.
+
 To be finalized once we agree on the audience, length, and format. This is the
 starting skeleton, and it mirrors the course modules.
 
