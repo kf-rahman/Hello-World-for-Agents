@@ -1,24 +1,22 @@
-# Save File
+# Progress
 
-<!-- The Game Master reads and updates this file every turn.
-     It's the agent's external memory. You'll learn why this matters in Module 2. -->
+<!-- The course guide reads and updates this file every turn.
+     It is the agent's external memory. Module 2 explains why that matters. -->
 
-## Player
+## Learner
 - name:
-- track:          <!-- novice | adept -->
-- agent_tool:     <!-- e.g. Claude Code, Codex, Cursor -->
+- experience:     <!-- novice | adept -->
+- persona:        <!-- engineer | business -->
+- agent_tool:     <!-- e.g. Claude Code (CLI), Copilot in VS Code, Codex -->
 - started:
 
-## Location
-- module: 00-tutorial
-- quest: 01-hello-agent
-- step: briefing
+## Current position
+- module: 00-getting-started
+- exercise: 01-setup
+- step: instructions
 
-## XP
-- total: 0
-
-## Quest log
-<!-- One line per finished quest: id | xp | hints used | date -->
+## Completed
+<!-- One line per exercise: id | minutes taken | hints used | date -->
 
 ## Notes
-<!-- Anything the GM should remember about this player between sessions -->
+<!-- Anything the guide should remember about this learner between sessions -->

@@ -1,45 +1,55 @@
 # Module 1: Prompting
 
-> *The barkeep points at a notice board covered in bug reports.
-> "Words are your sword here. Swing them carelessly and you'll cut the wrong thing."*
+**Time:** 25 minutes
 
-## Learning objectives
-- Understand why "fix the bug" gets worse results than a specific task prompt.
-- Write prompts with the four parts agents need: **Goal, Context, Constraints,
-  Done-when**.
-- Use **plan-first** prompting: have the agent propose a plan, review it, then
-  let it build.
-- Ask the agent to **verify its own work** (run tests, reproduce the bug, show
-  the output).
+## Learning goal
+The learner can write a prompt that an agent can carry out **without guessing**:
+it states the outcome, where to look, what not to change, and how to confirm the
+work is done.
 
-## Key ideas
+## Objectives
+- Explain why "fix the problem" gives worse results than a specific task prompt.
+- Write prompts with four parts: **Goal, Context, Constraints, Done when**.
+- Use **plan first**: ask for a plan, review it, then approve the work.
+- Ask the agent to **verify** its own work.
 
-**Chat prompting vs agent prompting.** In chat, you prompt for an *answer*. With
-an agent, you prompt for an *outcome*. The agent will take many actions to get
-there, so it needs to know when it's done and what it must not touch.
+## Key concepts
 
-**The GCCD pattern** (a simple checklist, not a magic formula):
-| Part | Question it answers | Example |
-|------|---------------------|---------|
-| **Goal** | What outcome do I want? | "Selling an item that isn't in stock should show a clear error." |
-| **Context** | What should it look at? | "The logic is in `playground/tavern.py`, `sell()`." |
-| **Constraints** | What must not change? | "Don't change the ledger file format. Standard library only." |
-| **Done-when** | How do we know it worked? | "Add a test for it. All tests pass." |
+**Prompting for an answer vs prompting for an outcome.** In a chat, you prompt
+for an answer. With an agent, you prompt for an outcome, and the agent takes
+many steps to get there. It needs to know what "done" means and what it must
+not touch, because every guess it makes carries into the steps that follow.
 
-**Plan first, then build.** For anything non-trivial, ask for a plan before any
-code. Many tools have a dedicated plan mode for this. It's cheaper to fix a
-plan than a pile of wrong changes.
+**Goal, Context, Constraints, Done when.** A checklist, not a formula:
 
-**Verification.** Agents are much more reliable when they can check themselves.
-Ask for tests, a reproduction, or command output as proof.
+| Part | The question it answers |
+|------|-------------------------|
+| **Goal** | What outcome do I want? |
+| **Context** | Which files, data, or background should the agent use? |
+| **Constraints** | What must stay the same? What's off limits? |
+| **Done when** | How will we know it worked? |
 
-**Adept track note:** stress what's different from ChatGPT habits. There's less
-need for long role-play preambles ("You are an expert...") and more need for
-concrete file paths, constraints, and success criteria.
+**Plan first.** For anything that isn't trivial, ask for a plan before any
+changes. Many tools have a plan mode, and in any tool you can say "don't change
+anything yet; give me a plan." Fixing a plan is cheaper than undoing work.
 
-## Quests
-| # | Quest | Summary |
-|---|-------|---------|
-| 1 | [Vague vs Specific](quests/01-vague-vs-specific.md) | Try "fix the bug", then rewrite it with GCCD |
-| 2 | [Plan Before You Build](quests/02-plan-first.md) | Get a plan, critique it, then run it |
-| 3 | [BOSS: Proof of Work](quests/03-boss-proof-of-work.md) | One prompt that ships a feature *and* proves it works |
+**Verification.** Agents are more reliable when they can check themselves. Ask
+for proof: tests passing, the output shown, figures reconciled against the
+source.
+
+## Persona notes
+- **Engineer:** "done when" usually means tests: a new test that covers the
+  change, and all tests passing.
+- **Business:** "done when" usually means the output can be checked: totals
+  match the source, every claim cites where it came from, and the output
+  follows the required format.
+- **Adept:** point out the chat-era habits that matter less here, such as long
+  role-play openings ("You are an expert…"). Concrete file names, constraints,
+  and success criteria matter more.
+
+## Exercises
+| # | Exercise | Minutes |
+|---|----------|---------|
+| 1 | [Vague vs Specific](exercises/01-vague-vs-specific.md) | 10 |
+| 2 | [Plan First](exercises/02-plan-first.md) | 7 |
+| 3 | [Checkpoint: One Prompt, Verified Result](exercises/03-checkpoint.md) | 8 |

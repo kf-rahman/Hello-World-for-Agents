@@ -1,87 +1,76 @@
 # Hello World for Agents
 
-A self-guided, turn-based course on working with AI coding agents.
-You play it inside the agent you're learning about.
+A self-paced, turn-based course on working with AI agents. You take it
+**inside the agent you're learning to use**, and it takes about **2 hours**.
 
-```
-  ┌─────────────────────────────────────────────┐
-  │  > start                                    │
-  │                                             │
-  │  GM: Welcome, traveler. Before we begin,    │
-  │  have you used a coding agent before?       │
-  │                                             │
-  │    [1] Never. What's a coding agent?        │
-  │    [2] I've used ChatGPT, but not agents    │
-  └─────────────────────────────────────────────┘
-```
+## Course learning goal
 
-## Who this is for
+By the end, you can **hand off a real multi-step task to an AI agent and get a
+verified result**. To do that, you write prompts that describe an outcome,
+manage what the agent knows, extend it with skills and MCP, and choose the right
+kind of agent tool for the job.
 
-- **Novices**: you have never used a coding agent like Claude Code, Codex,
-  Cursor, or Gemini CLI.
-- **Adepts**: you have used chat AI tools like ChatGPT or Copilot chat, but you
-  don't know how to get started with *agentic* workflows, where the AI reads
-  files, runs commands, and makes changes itself.
+## Who it's for
 
-## How to play
+The course adapts to two settings you choose at the start:
+
+| | **Engineer** (works in code) | **Business** (works in documents, data, processes) |
+|---|---|---|
+| **Novice**: never used a coding agent | Full walkthrough, software project | Full walkthrough, business project, no jargon |
+| **Adept**: used ChatGPT or Copilot chat, but not agents | Faster pace, software project | Faster pace, business project |
+
+## How to start
 
 1. **Clone the repo**
    ```bash
    git clone https://github.com/kf-rahman/Hello-World-for-Agents.git
    cd Hello-World-for-Agents
    ```
-2. **Open your coding agent in this folder.** Any of these work:
-   ```bash
-   claude        # Claude Code
-   codex         # OpenAI Codex CLI
-   gemini        # Gemini CLI
-   ```
-   Or open the folder in Cursor, Windsurf, or VS Code with Copilot agent mode.
-   New to all of this? See [docs/SETUP.md](docs/SETUP.md).
+2. **Open an AI agent in this folder**: Claude Code, Codex, Gemini CLI,
+   Cursor, GitHub Copilot agent mode, or similar. New to this? See
+   [docs/SETUP.md](docs/SETUP.md).
 3. **Type `start`.**
 
-The agent reads [`AGENTS.md`](AGENTS.md) (or [`CLAUDE.md`](CLAUDE.md) /
-[`GEMINI.md`](GEMINI.md)), which turns it into your Game Master. Your progress
-is saved in `save/save.md`.
+The agent reads [`AGENTS.md`](AGENTS.md) (Claude Code reads it through
+[`CLAUDE.md`](CLAUDE.md)) and becomes your course guide. It gives you one step
+at a time, checks your work, and saves your progress to `save/save.md`.
 
-### Commands
+| Command | Effect |
+|---------|--------|
+| `start` | Begin or resume |
+| `next` | Move on once the current exercise is complete |
+| `hint` | Get a hint |
+| `check` | Have the guide check your work |
+| `status` | Progress and time used |
+| `map` | All modules and exercises |
+| `explain` | Explain the last step in more depth |
 
-| Command   | Effect |
-|-----------|--------|
-| `start`   | Begin or resume |
-| `next`    | Move on once the current quest is complete |
-| `hint`    | Get a nudge |
-| `check`   | Have the GM verify your work |
-| `status`  | Show XP and progress |
-| `map`     | Show every module and quest |
-| `explain` | Go deeper on what just happened |
+## Modules
 
-## The world map
+| # | Module | Time | Learning goal |
+|---|--------|------|---------------|
+| 0 | [Getting Started](modules/00-getting-started/) | 10 min | Explain how an agent differs from a chatbot, and approve or deny its actions safely |
+| 1 | [Prompting](modules/01-prompting/) | 25 min | Write prompts an agent can carry out without guessing: outcome, context, constraints, how to confirm it's done |
+| 2 | [Context & Memory](modules/02-context-memory/) | 20 min | Control what the agent knows with memory files and fresh-session handoffs |
+| 3 | [Tools & Skills](modules/03-tools-skills/) | 20 min | Understand how agents act through tools, and package a workflow as a skill |
+| 4 | [MCP](modules/04-mcp/) | 15 min | Understand what MCP is, how it differs from an API, and when to use it, and then use one |
+| 5 | [Agent Surfaces](modules/05-agent-surfaces/) | 10 min | Know why agents come as chat apps, IDE tools, CLIs, and cloud services, and pick the right one |
+| 6 | [Capstone](modules/06-capstone/) | 20 min | Take one realistic task from spec to verified result, using everything above |
 
-| # | Module | You'll learn to... |
-|---|--------|--------------------|
-| 0 | **Tutorial: Hello, Agent** | See how an agent differs from a chatbot: the loop of reading, acting, and checking |
-| 1 | **Prompting** | Write task prompts that agents can act on: goals, constraints, and a definition of done |
-| 2 | **Context & Memory** | Manage what the agent knows: memory files, context windows, compaction, and fresh starts |
-| 3 | **Tools & Skills** | Understand tool calls and permissions, and write your own reusable skill |
-| 4 | **MCP** | Connect an agent to outside systems with the Model Context Protocol |
-| 5 | **The Tool Landscape** | Compare Claude Code, Codex, Gemini CLI, Cursor, Copilot, and others, and pick the right one for a job |
-| 6 | **Final Boss** | Put it all together on one real task, from start to finish |
-
-## Repo layout
+## Repository layout
 
 ```
-AGENTS.md          # Game Master rules (read by most agents)
-CLAUDE.md          # Imports AGENTS.md for Claude Code
-GEMINI.md          # Imports AGENTS.md for Gemini CLI
-save/              # Your save file (git-ignored)
-modules/           # Lessons and quests, one folder per module
-playground/        # The sandbox project you'll work on
-docs/              # Setup guide, course design notes, presentation outline
+AGENTS.md        Course guide instructions (read by most agents)
+CLAUDE.md        Imports AGENTS.md for Claude Code
+GEMINI.md        Imports AGENTS.md for Gemini CLI
+modules/         One folder per module: README (goals and concepts) + exercises/
+projects/        Practice project for each persona (engineer, business)
+workspace/       Where you do the exercises
+save/            Your progress file (not committed to git)
+docs/            Setup guide, course design notes, presentation
 ```
 
 ## Contributing
 
-Quests are plain Markdown with a fixed format. See
-[docs/COURSE_DESIGN.md](docs/COURSE_DESIGN.md) for how they work and what's
-planned.
+Exercises are Markdown files in a fixed format. See
+[docs/COURSE_DESIGN.md](docs/COURSE_DESIGN.md).

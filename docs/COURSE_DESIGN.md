@@ -1,81 +1,77 @@
-# Course Design (working doc)
+# Course Design
 
-Status: **first draft, open for feedback.** Modules 0 and 1 can be played now.
-Modules 2 to 6 are outlines.
+Status: **content drafted for all modules. Practice projects not chosen yet.**
 
-## Goals
-1. Someone who has **never used a coding agent** can go from zero to
-   confidently directing one.
-2. Someone who **uses chat AI** (ChatGPT, Copilot chat) learns what changes when
-   the AI can *act*, and builds working habits for agentic workflows.
-3. **Tool-agnostic.** It works in Claude Code, Codex, Gemini CLI, Cursor, and
-   others. Concepts first, brands second.
+## Course learning goal
+By the end, the learner can **hand off a real multi-step task to an AI agent and
+get a verified result**. To do that, they write prompts that describe an
+outcome, manage what the agent knows, extend it with skills and MCP, and choose
+the right kind of agent tool for the job.
 
-## Core mechanic: the agent is the game engine
-There's no game code. `AGENTS.md` turns whatever agent the player opens into a
-**Game Master** that:
-- reads and writes `save/save.md` (state),
-- runs quests from Markdown files (content),
-- checks win conditions against real files and test runs (verification).
+## Audience
+Learners choose two settings at the start:
 
-This works on two levels: **the way the course runs teaches the course.** The
-save file *is* external memory (Module 2). `AGENTS.md` *is* a memory file
-(Module 2). Quest files *are* structured prompts (Module 1). A later version
-could package the GM as a skill (Module 3). We point this out as players go.
+- **Experience:** `novice` (never used a coding agent) or `adept` (has used chat
+  AI tools, but not agentic workflows). This controls pace, how much is
+  explained, and which exercises can be skipped.
+- **Persona:** `engineer` or `business`. This controls the practice project,
+  the examples, and what "verified" means (tests passing vs outputs checked
+  against their sources).
 
-### Why not a Python CLI game?
-We considered a `python play.py` engine. We chose the agent-as-GM approach
-because:
-- players practice with the real tool from the first minute,
-- there's nothing to install beyond the agent,
-- content is plain Markdown, so it's easy to contribute to.
+## How it works
+There's no program to install. `AGENTS.md` makes the learner's own agent act as
+the **course guide**, which:
+- reads and updates `save/save.md` (progress),
+- runs exercises from Markdown files,
+- checks completion against real files, command output, or the conversation.
 
-Trade-off: the agent's behavior varies a bit between tools and models. Win
-conditions rely on **checkable artifacts** (files, tests passing) so grading
-stays mostly deterministic. We could add a `scripts/check.py` later to make
-checks fully deterministic.
+The course demonstrates its own concepts: `AGENTS.md` is a memory file,
+`save/save.md` is external memory, and each exercise file is a structured
+prompt. The guide points this out in Module 2.
 
-## Two tracks
-| | Novice | Adept |
-|--|--------|-------|
-| Pace | One concept per turn, analogies | Faster, skip warm-ups |
-| Module 0 | Full | Quests 2 and 3 skippable |
-| Framing | "What is an agent?" | "What changes when the AI can act?" |
+## Time budget (2 hours)
 
-## Shared sandbox: the Tavern Ledger
-`playground/tavern.py` is a tiny inventory CLI with bugs planted on purpose:
-- `sell` on an unknown item → `KeyError` (Module 1, quest 1)
-- overselling → negative stock (Module 1, quest 2)
-- no `low` command (Module 1 boss)
-- float money, no input validation (spare material for later modules)
+| # | Module | Minutes | Exercises |
+|---|--------|---------|-----------|
+| 0 | Getting Started | 10 | 3 |
+| 1 | Prompting | 25 | 3 |
+| 2 | Context & Memory | 20 | 3 |
+| 3 | Tools & Skills | 20 | 3 |
+| 4 | MCP | 15 | 2 |
+| 5 | Agent Surfaces | 10 | 2 |
+| 6 | Capstone | 20 | 1 |
+| | **Total** | **120** | **17** |
 
-One project across all modules means the player's context (and memory file)
-builds up over time, which matches real work.
+Novices will probably run over on Modules 1 to 3. Adepts can skip the exercises
+marked `skippable: true` (about 30 minutes' worth), which leaves room for that.
 
-## Module map
-| # | Module | Status | Boss |
-|---|--------|--------|------|
-| 0 | Tutorial | ✅ playable | — |
-| 1 | Prompting | ✅ playable | One-shot prompt that ships and verifies a feature |
-| 2 | Context & Memory | 📝 outline | Fresh-session handoff |
-| 3 | Tools & Skills | 📝 outline | Skill gets used without being named |
-| 4 | MCP | 📝 outline | Build a Tavern Ledger MCP server |
-| 5 | Tool Landscape | 📝 outline | Tool-choice scenarios |
-| 6 | Final Boss | 📝 outline | End-to-end feature plus retro |
+## Projects
+Exercises are written without reference to a project and point to **task
+slots** (`P0.1` … `P6.1`). Each persona's project fills those slots. See
+[projects/README.md](../projects/README.md) for the requirements. Both projects
+are **to be decided**.
 
-## Open questions for the author
-1. **Tone.** Is the fantasy-tavern flavor right, or should it be more
-   neutral/professional (for workplace workshops)?
-2. **Length.** Target time per module? (Current guess: 20 to 40 minutes, so 3
-   to 4 hours in total.)
-3. **Playground language.** Python is the most beginner-friendly. Do we need a
-   JS/TS version?
-4. **Module 5 depth.** A neutral comparison table, or opinionated
-   recommendations? Should players need access to two tools?
-5. **MCP build quest.** Required, or a stretch goal? It needs `pip install`.
-6. **Deterministic checks.** Add `scripts/check.py` per quest, or rely on
-   the GM's judgment?
-7. **Workshop mode.** Will this be run live alongside the presentation, or only
-   self-paced? This affects pacing and checkpoints.
-8. **Non-coders.** Should there be a track for people who don't code at all
-   (PMs, analysts)?
+## Module 4 (MCP) approach
+The focus is the mental model, not building a server: what MCP is, how it
+differs from an API (and why it isn't "MCP instead of an API"), when to use a
+built-in tool, a skill, or MCP, and security. Then the learner connects one
+server and uses it.
+
+## Module 5 (Agent Surfaces) approach
+The focus is on *why* different forms exist (chat and desktop apps, IDE,
+terminal, web/cloud, automation), using Claude Code, Codex, and Copilot as
+examples. It is not a feature-by-feature product comparison. Product details
+change quickly, so the content avoids specific version claims, and the guide is
+told to check official docs.
+
+## Open questions
+1. **Projects:** choose the engineer and business projects, and fill in the slots.
+2. **Business setup:** which tool should business learners use by default?
+   The course needs an agent that can read and write files in the repo (a
+   desktop app, an IDE, or a CLI).
+3. **Module 4 server:** pick one default MCP server that needs no account or
+   API key for each persona.
+4. **Deterministic checks:** add check scripts to each project, or rely on
+   the guide's judgment?
+5. **Live vs self-paced:** will the presentation be given alongside a live run
+   of the course?

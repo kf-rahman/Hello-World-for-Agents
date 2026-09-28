@@ -1,37 +1,57 @@
 # Module 2: Context & Memory
 
-> *The tavern's old scribe taps his head. "An agent remembers nothing between
-> visits, unless you write it down."*
+**Time:** 20 minutes
 
-## Learning objectives
-- Explain the **context window**: the agent's working memory, which is limited
-  and fills up.
-- Know what fills it (messages, file reads, tool output) and what happens when
-  it's full (compaction, or forgetting).
-- Write a **project memory file** (`AGENTS.md` / `CLAUDE.md`) that makes every
-  future session better.
-- Know when to **start fresh** versus continue, and how to hand off with a
-  notes file.
+## Learning goal
+The learner can control **what the agent knows**: they give it lasting project
+knowledge through a memory file, and they recognize when to start a fresh
+session with a handoff note instead of continuing a long one.
 
-## Key ideas (draft)
-- **Stateless by default.** Each new session starts blank. This course's
-  `AGENTS.md` and `save/save.md` are working examples of memory files. Point
-  that out to the player.
-- **Memory hierarchy.** User-level vs project-level vs folder-level memory files.
-  The file names differ by tool (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, Cursor
-  rules), and the idea is the same everywhere.
-- **Context rot.** Long sessions full of dead ends make agents worse. Fresh
-  context plus a good handoff note usually beats one huge session.
-- **What belongs in memory:** how to build and test, conventions, gotchas.
-  **What doesn't:** things the agent can read from the code itself.
+## Objectives
+- Explain the **context window**: the agent's working memory, which has a limit.
+- Name what fills it (messages, files read, tool output) and what happens when
+  it's full (older content is summarized or dropped).
+- Write a project **memory file** that improves every future session.
+- Hand off a task to a fresh session using a short notes file.
 
-## Planned quests
-| # | Quest | Summary |
-|---|-------|---------|
-| 1 | Goldfish | Start a *new* session and ask about the last fix. See that the agent doesn't remember. |
-| 2 | The Scribe's Ledger | Write `playground/AGENTS.md` (run command, test command, conventions). Check it in a fresh session. |
-| 3 | Too Much Noise | Pollute the context (huge output, off-topic tangents), see answers get worse, then compact or restart. |
-| 4 | BOSS: The Handoff | Stop mid-task, write a handoff note, and have a *fresh* session finish the job using only the note. |
+## Key concepts
 
-**Checkable win conditions:** memory file exists with specific facts; a fresh
-session answers "how do I run the tests?" correctly without searching.
+**Agents start each session with no memory.** A new session doesn't remember
+earlier ones. Anything the agent should always know has to be written down
+where it will be loaded.
+
+**Memory files.** Plain text files that the agent loads automatically at the
+start of every session. The idea is the same across tools, but the file names
+differ:
+
+| Tool | Project memory file |
+|------|---------------------|
+| Codex, Cursor, Copilot, and many others | `AGENTS.md` |
+| Claude Code | `CLAUDE.md` (can import `AGENTS.md`) |
+| Gemini CLI | `GEMINI.md` (configurable) |
+
+*(Check the current conventions in each tool's docs; they change.)* This
+course runs on this mechanism: `AGENTS.md` is what makes the agent behave as
+your guide, and `save/save.md` is how it remembers your progress.
+
+**What belongs in a memory file:** how to run and check the project,
+conventions, known problems, and preferences. **What doesn't:** anything the
+agent can easily find out by reading the files itself.
+
+**Context gets noisy.** Long sessions full of dead ends, large outputs, and
+off-topic tangents make answers worse. Tools summarize (compact) old context
+automatically, and that loses detail. It's often better to start a new session
+with a clear handoff note.
+
+## Persona notes
+- **Engineer:** memory files hold build and test commands, code style, and
+  architecture notes.
+- **Business:** memory files hold house style, the audience, definitions
+  (for example, what "active customer" means), and the sources to trust.
+
+## Exercises
+| # | Exercise | Minutes |
+|---|----------|---------|
+| 1 | [No Memory Between Sessions](exercises/01-no-memory.md) | 4 |
+| 2 | [Write a Memory File](exercises/02-memory-file.md) | 8 |
+| 3 | [Checkpoint: The Handoff](exercises/03-checkpoint-handoff.md) | 8 |
