@@ -1,116 +1,273 @@
 # Presentation Brief
 
 Working notes for the presentation that goes with *Hello World for Agents*.
-Use this file to pick up where we left off, in any session or tool.
+The file is organized around the author's key messages. Each message has the
+point to land, what to say, and the evidence behind it. Use this file to pick
+up where we left off, in any session or tool.
 
-## Where we left off (2026-09-28)
-- The course content for all 7 modules is drafted (see `docs/COURSE_DESIGN.md`).
+**Contents**
+- [Where we left off](#where-we-left-off)
+- [The storyline at a glance](#the-storyline-at-a-glance)
+- [Why now: what our competitors are doing](#why-now-what-our-competitors-are-doing)
+- [Message 1: This has to be led from the top](#message-1-this-has-to-be-led-from-the-top)
+- [Message 2: Choose depth or speed, part by part](#message-2-choose-depth-or-speed-part-by-part)
+- [Message 3: Be intentional about every working session](#message-3-be-intentional-about-every-working-session)
+- [Message 4: Measure success](#message-4-measure-success)
+- [Open questions](#open-questions)
+- [Sources](#sources)
+
+---
+
+## Where we left off
+*Last updated 2026-09-28*
+
+- **Course:** content for all 7 modules is drafted (see `docs/COURSE_DESIGN.md`).
   The practice projects are still to be decided.
-- The key messages below are agreed by the author.
-- The measurement framework below is a **proposal**, waiting for the author's
-  answers to the open questions.
-- A separate session started on the slide outline, working on branch
+- **Presentation:** the key messages are agreed. The competitor evidence and
+  the measurement framework are **proposals** for the author to review.
+- **Other sessions:** a separate session started on the slide outline, on branch
   `claude/presentation-planning`. It began before this brief existed, so point
   it to this file.
-- `docs/PRESENTATION.md` is an older placeholder that still has the discarded
-  fantasy framing. This brief replaces it.
+- `docs/PRESENTATION.md` is an older placeholder and is superseded by this file.
 
-## Key messages (from the author)
+---
 
-1. **Leaders and senior staff have to drive this.** The push toward agentic
-   workflows has to come from people leaders and senior staff. They show what
-   it looks like by working this way themselves, and they encourage their peers
-   to work at this pace. Adoption follows what senior people do and make room
-   for, not tool licences.
+## The storyline at a glance
 
-2. **These tools let you choose between depth and speed.** You can now decide
-   where to learn something very deeply and where to move very fast.
-   - Example: **building a report**. A report has a lot of baggage: data
-     extraction, cleaning, analysis, visuals, narrative, and QA. Each part used
-     to take roughly fixed effort. Now you choose which parts to spend more
-     time on. For example:
-     - depending less on a very technical person to extract the data, or
-     - exploring visuals to understand what could have the most impact.
+| # | Section | The line to land |
+|---|---------|------------------|
+| 0 | **Why now** | Our competitors are already working this way, and some can show results. |
+| 1 | **Led from the top** | Adoption follows leaders and senior staff. We set the pace for our peers. |
+| 2 | **Depth or speed** | These tools let you choose, for each part of the work, whether to go deep or move fast. |
+| 3 | **Be intentional** | Every working session starts with clear success criteria. |
+| 4 | **Measure it** | We'll measure learning, practice, work impact, and business results, not just usage. |
+| → | **Call to action** | Take the 2-hour course. Leads: work this way yourselves, visibly. |
 
-3. **Be intentional about every working session.** Set clear success criteria
-   before you start. This is the Goal / Context / Constraints / Done when
-   pattern from Module 1, so the talk and the course reinforce each other.
+Suggested flow: open with **Why now**, then the four messages, then the call to
+action.
 
-4. **Measure success** (see below). Success criteria for each session are the
-   small-scale version of measuring success for the whole rollout.
+---
 
-## How the industry measures success (research summary)
+## Why now: what our competitors are doing
 
-**Consulting firms track adoption first.**
-- McKinsey reports that about 72% of its roughly 45,000 staff actively use its
-  internal tool, Lilli, with about 500,000 queries a month.
-- All the large firms have rolled out internal assistants. PwC's is the largest
-  by seat count, at about 200,000.
+**The point:** this isn't experimental any more. Every major consulting firm
+has deployed AI firm-wide and is moving to agents, and several publish results.
 
-**What they've learned: adoption isn't value.**
-- McKinsey found that 88% of organizations use AI, but only about 6% get
-  significant profit from it.
-- BCG found that only about 1 in 4 executives see significant returns.
-- MIT's "GenAI Divide" report (2025) found that 95% of pilots showed no
-  measurable profit-and-loss impact.
+### Firm by firm
 
-**Three findings to design the measurement around**
+| Firm | What they deployed | Reported results |
+|------|--------------------|------------------|
+| **McKinsey** | Lilli, an internal assistant, rolled out firm-wide from 2023; now running AI agents at scale | About 72% of roughly 45,000 staff are active users, with about 500,000 prompts a month. The firm reports about **30% time savings** on knowledge work such as research and synthesis. |
+| **BCG** | ChatGPT Enterprise for every employee (Oct 2023); staff-built custom GPTs; Deckster (slide builder) | Nearly **90%** of staff use AI. Employees have built **18,000+ custom GPTs**, about 1,000 shared across teams. Deckster has been used for more than **450,000** slide creations or edits, and about **40% of junior consultants use it weekly**. About **70% of hours saved are reinvested in higher-value work**. BCG now factors AI use into how people are evaluated. |
+| **PwC** | ChatGPT Enterprise to about 100,000 staff in the US and UK (2024), the largest deployment at the time; an internal agent platform | Hundreds of agents deployed internally, with productivity gains of **up to 50%** in IT, finance, and tax. |
+| **EY** | EY.ai Agentic Platform (March 2025) | **150** tax agents for **80,000** tax professionals; about **1,000** agents in development or production in 2025. |
+| **KPMG** | Workbench, a multi-agent platform built with Microsoft (2025) | About **50** agents live and nearly **1,000** in development. A $2B, five-year AI commitment targeting **$12B** in AI-enabled revenue. |
+| **Deloitte** | Zora AI, agents for finance, HR, supply chain, and other functions | Deloitte **projects** 25% lower costs and 40% higher productivity for its own finance team. This is a target, not a measured result. |
+| **Accenture** | Firm-wide training, plus partnerships with OpenAI, Databricks, and ServiceNow | **550,000+** people trained in generative AI fundamentals; AI and data professionals nearly doubled to **77,000** in two years. |
 
-| Finding | What it means for measuring |
-|---|---|
-| **BCG/Harvard "jagged frontier" study** (758 consultants, 2023). On tasks the AI handles well, consultants completed 12.2% more tasks, 25.1% faster, and at higher quality. On tasks outside what it handles well, they were 19 percentage points *less* likely to reach the correct answer. | Measure quality, not only speed. |
-| **METR study** (2025). Experienced developers were 19% *slower* with AI but believed they were 20% faster. METR now describes this result as historical. | Don't rely only on people's own estimates of time saved. |
-| **NBER working paper 35275** (2026, "Writing Code vs. Shipping Code"). Coding agents greatly increased the amount of code written, but actual releases rose only about 30%, because human review became the bottleneck. | Measure the finished deliverable, not how much the agent produced. |
+### Success stories worth telling
+- **BCG, "hours reinvested":** about 70% of saved time went back into
+  higher-value work. This is the best available example for Message 2: the
+  gain is choosing where to spend time, not just saving it.
+- **BCG, staff-built tools:** 18,000+ custom GPTs built by consultants
+  themselves, not by an IT team. Adoption scaled when the people doing the work
+  built their own tools. This connects to the course's skills module.
+- **McKinsey, usage at scale:** a single internal tool became part of daily
+  work for about 70% of the firm.
+- **EY and KPMG, agent pipelines:** both are moving from assistants that
+  answer questions to agents that carry out tasks, with hundreds to thousands
+  in the pipeline.
 
-Main framework in software engineering: DX's **utilization, impact, cost**.
+### Handle with care (speaker notes)
+- Most of these figures are **self-reported by the firms** or reported by the
+  press. Say "firms report", not "studies show".
+- Big deployments aren't the same as big results. McKinsey's own research found
+  88% of organizations use AI, but only about 6% get significant profit from
+  it. This leads into Message 4.
 
-## Proposed measurement framework (adapted for consulting)
+---
+
+## Message 1: This has to be led from the top
+
+**The point:** the push toward agentic workflows has to come from **people
+leaders and senior staff**. They show what it looks like by working this way,
+and they encourage their peers to work at this pace.
+
+**What to say**
+- Tools are available to everyone, but adoption follows what senior people do
+  and give permission for.
+- Leaders' job: use it visibly, protect time for learning, and ask "did you try
+  an agent for this?" in reviews.
+- Senior staff's job: share what works (prompts, memory files, skills) so their
+  peers don't start from zero.
+
+**Evidence**
+- **BCG AI at Work 2025** (10,635 employees, 11 countries): when leaders
+  strongly support AI, the share of frontline employees who feel positive about
+  it rises from **15% to 55%**. Only about **a quarter** of frontline employees
+  get that level of support, and frontline adoption has stalled at about
+  **51%**, which BCG calls the "silicon ceiling."
+- BCG found that regular use is driven by leaders and managers, and that
+  training plus hands-on coaching is what moves others to regular use. This is
+  the argument for the course.
+- BCG itself now factors AI use into how staff are evaluated, which is a
+  leadership signal.
+
+---
+
+## Message 2: Choose depth or speed, part by part
+
+**The point:** these systems let you **choose** between spending a lot of time
+learning something very deeply and moving very fast, and you make that choice
+for each part of the work.
+
+**Example: building a report.** A report carries a lot of baggage. Each part
+used to cost roughly fixed effort. Now you decide where to invest.
+
+| Part of the report | Before | With agents, you can choose to… |
+|--------------------|--------|---------------------------------|
+| Data extraction | Wait for a technical colleague to pull it | **Go fast:** less dependence on a technical specialist; pull and shape the data yourself |
+| Cleaning and preparation | Manual, error-prone | Go fast, with the agent checking against the source |
+| Analysis | Limited by time | **Go deep:** test more hypotheses and cuts |
+| Visuals | One or two charts, whatever fits the time | **Go deep:** explore many options to find what's most impactful |
+| Narrative | Written last, under time pressure | Go deep on the "so what" |
+| QA and review | Squeezed at the end | Go deep: the agent drafts, a person verifies |
+
+**What to say**
+- The question stops being "how long will this take?" and becomes "where do I
+  want to spend my time on this one?"
+- The answer can differ for each engagement, and that's the point.
+
+**Evidence**
+- BCG reports that about **70% of hours saved** were reinvested in higher-value
+  work.
+- **Caution, the "jagged frontier"** (BCG/Harvard, 758 consultants): on tasks
+  the AI handles well, consultants were **25% faster**, completed **12%** more
+  tasks, and produced higher quality. On tasks outside what it handles well,
+  they were **19 points less likely** to reach the correct answer. Choosing
+  speed only works where the tool is strong, which leads into Message 3.
+
+---
+
+## Message 3: Be intentional about every working session
+
+**The point:** be intentional about every working session, and **set clear
+success criteria before you start**.
+
+**What to say**
+- Before starting, write down: the **goal**, the **context** (which data and
+  files), the **constraints** (what must not change), and what **"done"** looks
+  like and how you'll check it. This is Module 1 of the course.
+- Decide up front which parts you're going deep on and which you're moving
+  fast on (Message 2).
+- End every session by checking the result against the criteria, not by how it
+  feels.
+
+**Evidence**
+- **The METR study** (2025): experienced developers were **19% slower** with AI
+  but believed they were **20% faster**. Feelings aren't a measure, and written
+  criteria are.
+- **The jagged frontier:** the same tool helps on some tasks and hurts on
+  others. Success criteria are how you notice which is which.
+
+---
+
+## Message 4: Measure success
+
+**The point:** we'll measure whether this is working at four levels, not just
+count logins.
+
+**What the industry has learned**
+- **Adoption isn't value.** McKinsey found 88% of organizations use AI, but
+  only about 6% see significant profit from it. BCG found only about 1 in 4
+  executives see significant returns. MIT's "GenAI Divide" report found 95% of
+  pilots showed no measurable profit-and-loss impact.
+- **Output isn't outcome.** An NBER study (2026) found that coding agents
+  greatly increased the amount of code written, but actual releases rose only
+  about 30%, because human review became the bottleneck.
+- **Self-reports overstate the gains** (METR, above).
+- The main framework in software engineering, from DX, measures
+  **utilization, impact, and cost**.
+
+**Proposed framework (adapted for consulting)**
 
 | Layer | Question | Example metrics | Leading or lagging |
-|---|---|---|---|
+|-------|----------|-----------------|--------------------|
 | 1. Learning | Can people do it? | Course completion, capstone passed, confidence before and after | Leading |
-| 2. Practice | Are they doing it well? | Weekly active use; % of working sessions that start with written success criteria; memory files and skills shared across the team (reuse is a strong sign of maturity) | Leading |
-| 3. Work impact | Is the work changing? | For 2–3 recurring deliverables: time from request to client-ready; hand-offs to technical specialists; rounds of rework; reviewer quality score; **where the saved time went** | Middle |
+| 2. Practice | Are they doing it well? | Weekly active use; **% of sessions that start with written success criteria** (Message 3); memory files and skills shared across the team | Leading |
+| 3. Work impact | Is the work changing? | For 2–3 recurring deliverables: time from request to client-ready; **hand-offs to technical specialists** (Message 2); rounds of rework; reviewer quality score; **where the saved time went** | Middle |
 | 4. Business | Does it matter commercially? | Capacity and utilization, margin on fixed-fee work, client satisfaction | Lagging |
 
-"Where the saved time went" ties the measurement to message 2. The claim isn't
-only that time is saved; it's that time is spent deliberately. Did it go into
-deeper analysis, better visuals, or just more volume?
+"Where the saved time went" is the metric that matches Message 2. It's the same
+thing BCG tracks with its "hours reinvested" figure.
 
 **How to run it:** a 4–6 week pilot cohort alongside a comparison team.
 1. Measure a baseline for 2–3 recurring deliverables before the pilot starts.
 2. Collect timestamps for Layer 3, not just surveys.
 3. Add a 2-minute weekly check-in for Layer 2.
 
-## Open questions for the author
-1. Who is the measurement for: leadership wanting ROI, or teams improving how
-   they work? The answer decides whether Layer 4 or Layer 3 leads the talk.
-2. Can we get usage data from the tools (seat and usage dashboards), or will this
-   rely on surveys and timestamps?
-3. Is there a real recurring deliverable to use as the report example? It could
-   also become the business persona's practice project.
-4. Still to confirm: audience, length, format (Google Slides / PowerPoint /
+---
+
+## Open questions
+1. **Audience for the measurement:** leadership wanting ROI, or teams improving
+   how they work? The answer decides whether Layer 4 or Layer 3 leads.
+2. **Data access:** can we get tool usage data (seat and usage dashboards), or
+   will this rely on surveys and timestamps?
+3. **Report example:** is there a real recurring deliverable to use as the
+   Message 2 example? It could also become the business persona's practice
+   project.
+4. **Competitor section:** name competitors directly, or anonymize them (for
+   example "a top-3 strategy firm")? This depends on the audience and whether
+   the deck will be shared outside the firm.
+5. **Logistics:** audience, length, format (Google Slides / PowerPoint /
    other), live demo or not, and whether the talk goes alongside a live run of
    the course.
 
+---
+
 ## Sources
-- HBS AI Institute: Navigating the Jagged Technological Frontier:
-  https://aiinstitute.hbs.edu/navigating-the-jagged-technological-frontier/
-- Harvard Crimson on the BCG study:
-  https://www.thecrimson.com/article/2023/10/13/jagged-edge-ai-bcg/
-- METR, early-2025 developer productivity study:
-  https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
-- NBER w35275, Writing Code vs. Shipping Code: https://www.nber.org/papers/w35275
-  (Not read directly; secondary sources give different percentages but agree
-  releases rose about 30%. Check the paper before quoting exact figures.)
-- DX AI measurement framework: https://getdx.com/blog/ai-roi-calculator/
-- BCG, AI adoption in 2024:
-  https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value
-- BCG, Closing the AI impact gap:
-  https://www.bcg.com/publications/2025/closing-the-ai-impact-gap
-- AI in consulting, 2026 (McKinsey Lilli figures):
-  https://whitehat-seo.co.uk/blog/ai-impact-on-consulting
-- Big consulting firms' internal AI tools compared:
+
+**Reliability:** figures marked *(firm)* come from the firm's own statements;
+*(press)* means press or analyst reporting, which should be checked against the
+original before it goes on a slide; *(study)* is research.
+
+**Competitors**
+- McKinsey Lilli adoption and 30% time savings *(press, citing the firm)*:
+  https://whitehat-seo.co.uk/blog/ai-impact-on-consulting ·
+  https://digitaldefynd.com/IQ/ways-mckinsey-is-using-ai/
+- BCG: 18,000+ custom GPTs, Deckster, 70% of hours reinvested *(press, citing
+  the firm)*: https://digitaldefynd.com/IQ/ways-bcg-is-using-ai/ ·
+  https://www.computerworld.com/article/3491334/bcg-execs-ai-across-the-company-increased-productivity-employee-joy.html
+- BCG: about 90% of staff use AI, and AI use is part of evaluations *(press)*:
+  https://illuminem.com/illuminemvoices/nearly-90-of-bcg-employees-are-using-ai-and-its-reshaping-how-theyre-evaluated
+- PwC ChatGPT Enterprise rollout *(firm)*:
+  https://www.pwc.com/us/en/about-us/newsroom/press-releases/pwc-us-uk-accelerating-ai-chatgpt-enterprise-adoption.html
+- PwC agent results *(firm)*:
+  https://www.pwc.com/us/en/tech-effect/ai-analytics/ai-agent-survey.html
+- EY, KPMG, Deloitte agent platforms *(press)*:
+  https://enterprisedna.co/resources/news/deloitte-zora-ai-big-four-agentic-workforce/ ·
+  https://www.financial-world.org/news/news/financial/30088/deloitte-ey-pwc-and-kpmg-scale-ai-agents-across-audit-tax-and-consulting/ ·
+  https://kpmg.com/nl/nl/home/media/press-releases/2025/09/workbench-ai-agents-platform.html
+- Accenture training and headcount *(press)*:
+  https://www.ciodive.com/news/accenture-generative-ai-revenue-skills-training-data-modernization/761161/
+- Overview of the big firms' internal AI tools *(press)*:
   https://consulting-huber.com/ai-consulting-frameworks-compared.html
-- MIT GenAI Divide coverage:
+
+**Research**
+- BCG, AI at Work 2025 *(study)*:
+  https://www.bcg.com/publications/2025/ai-at-work-momentum-builds-but-gaps-remain
+- BCG/Harvard, Navigating the Jagged Technological Frontier *(study)*:
+  https://aiinstitute.hbs.edu/navigating-the-jagged-technological-frontier/
+- METR, early-2025 developer productivity study *(study)*:
+  https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
+- NBER w35275, Writing Code vs. Shipping Code *(study)*:
+  https://www.nber.org/papers/w35275. Not read directly; secondary sources give
+  different percentages but agree releases rose about 30%. Check the paper
+  before quoting exact figures.
+- BCG, AI adoption in 2024 *(study)*:
+  https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value
+- BCG, Closing the AI impact gap *(study)*:
+  https://www.bcg.com/publications/2025/closing-the-ai-impact-gap
+- MIT, The GenAI Divide *(study; press coverage)*:
   https://virtualizationreview.com/articles/2025/08/19/mit-report-finds-most-ai-business-investments-fail-reveals-genai-divide.aspx
+- DX AI measurement framework: https://getdx.com/blog/ai-roi-calculator/
