@@ -57,7 +57,7 @@ requires. Every connected server also uses up context.
 
 | Persona | Server | Everyday problem it solves | Notes |
 |---------|--------|----------------------------|-------|
-| **Business** | A **PowerPoint** MCP server | Turning analysis into slides | There's no official Microsoft server for this; the options are community-built, some creating `.pptx` files directly and some controlling the PowerPoint app. That makes it a good chance to practice **vetting a server**. If the firm uses Google Workspace, Google publishes an official **Google Slides** MCP server. |
+| **Business** | Any **PowerPoint** MCP server that creates `.pptx` files | Turning analysis into slides | Any reasonably maintained server works. The goal is a first draft of the deck, which the learner then moves to SharePoint (or wherever they keep files) and polishes by hand. The options are community-built, so do a quick **vetting** check first. |
 | **Engineer** | The official **Excalidraw** MCP server (`excalidraw/excalidraw-mcp`) | Diagrams for documentation: architecture, flows, sequences | A remote server with nothing to install and no account. Interactive diagrams display only in tools that support showing MCP content inline (for example Claude, ChatGPT, VS Code); others may need an exported file. |
 
 *(Check the current install steps and support in each server's docs before

@@ -13,8 +13,9 @@ learner's project, and look at what it gives the agent.
 
 ## Guide instructions
 1. **Pick the server by persona** (details in the module README):
-   - **Business: PowerPoint.** The task: turn the project's findings into a
-     short slide deck (`P4.1`).
+   - **Business: PowerPoint.** Any reasonably maintained PowerPoint MCP server
+     that creates `.pptx` files will do; help the learner pick one quickly.
+     The task: turn the project's findings into a short slide deck (`P4.1`).
    - **Engineer: Excalidraw.** The task: diagram how the project works, for its
      documentation (`P4.1`).
 2. **Vet before connecting.** Ask the learner who publishes the server, what it
@@ -49,6 +50,10 @@ learner's project, and look at what it gives the agent.
    content. Ask for a link or an exported file instead.
 3. Risks to consider: the data it can see, the actions it can take, and
    instructions hidden in tool descriptions or in the data it returns.
+
+After the check, tell business learners the deck is a first draft: they can
+move it to SharePoint (or wherever they keep files) and edit it like any other
+deck.
 
 ## Takeaway
 You just gave the agent a new ability that you'll use again: making slides or

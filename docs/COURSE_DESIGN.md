@@ -87,14 +87,12 @@ change quickly, so the content avoids specific version claims, and the guide is
 told to check official docs.
 
 ## Open questions
-1. **Module 4 PowerPoint server:** choose which community PowerPoint MCP
-   server to recommend (after vetting), or let the guide help each learner
-   choose.
-2. **Playtest:** run the course in at least two agents, one for each persona,
+1. **Playtest:** run the course in at least two agents, one for each persona,
    to check timing and consistency, especially for building the project.
-3. **Live vs self-paced:** will the course be run live after the leadership
+2. **Live vs self-paced:** will the course be run live after the leadership
    presentation, or only self-paced?
 
 **Decided:** the course doesn't depend on which tool the learner uses; there's
 no default tool for business learners. Projects are generated from the
-learner's own recent work.
+learner's own recent work. Module 4 uses any PowerPoint MCP server that creates
+`.pptx` files (business) and the official Excalidraw server (engineer).
