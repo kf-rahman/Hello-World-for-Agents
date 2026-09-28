@@ -25,6 +25,9 @@ up where we left off, in any session or tool.
   The practice projects are still to be decided.
 - **Presentation:** the key messages are agreed. The competitor evidence and
   the measurement framework are **proposals** for the author to review.
+- **Audience and purpose:** **senior leaders / management only.** The goal is
+  to get management to **drive AI usage**. The deck is a pitch to leaders, not
+  training for practitioners. Say "you" and make direct asks.
 - **Other sessions:** a separate session started on the slide outline, on branch
   `claude/presentation-planning`. It began before this brief existed, so point
   it to this file.
@@ -37,14 +40,25 @@ up where we left off, in any session or tool.
 | # | Section | The line to land |
 |---|---------|------------------|
 | 0 | **Why now** | Our competitors are already working this way, and some can show results. |
-| 1 | **Led from the top** | Adoption follows leaders and senior staff. We set the pace for our peers. |
-| 2 | **Depth or speed** | These tools let you choose, for each part of the work, whether to go deep or move fast. |
-| 3 | **Be intentional** | Every working session starts with clear success criteria. |
-| 4 | **Measure it** | We'll measure learning, practice, work impact, and business results, not just usage. |
-| → | **Call to action** | Take the 2-hour course. Leads: work this way yourselves, visibly. |
+| 1 | **Led from the top** | Adoption follows *you*. Your teams will move at the pace you set. |
+| 2 | **Depth or speed** | These tools let your teams choose, for each part of the work, whether to go deep or move fast. |
+| 3 | **Be intentional** | Every working session starts with clear success criteria. Expect this from your teams, and do it yourself. |
+| 4 | **Measure it** | Here's how you'll know it's working: business results, backed by leading indicators. |
+| → | **The ask** | See the leadership asks below. |
 
-Suggested flow: open with **Why now**, then the four messages, then the call to
-action.
+Suggested flow: open with **Why now**, then the four messages, and close with
+the asks.
+
+### The ask (closing slide, draft)
+What we need from senior leaders:
+1. **Use it yourself, visibly.** Take the 2-hour course and share one thing
+   you did with an agent.
+2. **Make room.** Protect time for your teams to learn and experiment. The
+   course takes 2 hours.
+3. **Expect it.** In reviews and planning, ask "did we try an agent for this?"
+   and "what were the success criteria?"
+4. **Sponsor a pilot.** Nominate a team and 2–3 recurring deliverables for a
+   4–6 week measured pilot (Message 4).
 
 ---
 
@@ -200,6 +214,10 @@ count logins.
 | 3. Work impact | Is the work changing? | For 2–3 recurring deliverables: time from request to client-ready; **hand-offs to technical specialists** (Message 2); rounds of rework; reviewer quality score; **where the saved time went** | Middle |
 | 4. Business | Does it matter commercially? | Capacity and utilization, margin on fixed-fee work, client satisfaction | Lagging |
 
+**For this audience:** lead with **Layer 4** (the business results leaders care
+about), and present Layers 1–3 as the **leading indicators** that show whether
+results are on the way before they appear in the numbers.
+
 "Where the saved time went" is the metric that matches Message 2. It's the same
 thing BCG tracks with its "hours reinvested" figure.
 
@@ -211,16 +229,19 @@ thing BCG tracks with its "hours reinvested" figure.
 ---
 
 ## Open questions
-1. **Audience for the measurement:** leadership wanting ROI, or teams improving
-   how they work? The answer decides whether Layer 4 or Layer 3 leads.
-2. **Data access:** can we get tool usage data (seat and usage dashboards), or
-   will this rely on surveys and timestamps?
-3. **Report example:** is there a real recurring deliverable to use as the
-   Message 2 example? It could also become the business persona's practice
-   project.
-4. **Logistics:** audience, length, format (Google Slides / PowerPoint /
-   other), live demo or not, and whether the talk goes alongside a live run of
-   the course.
+**Decided**
+- Audience: senior leaders / management only. Purpose: push management to
+  drive AI usage.
+- Measurement is for leadership, so business results (Layer 4) lead.
+- Competitors are named (public information).
+
+**Deferred (skip for now)**
+- Data access: tool usage dashboards vs surveys and timestamps.
+- A real recurring deliverable for the Message 2 report example.
+
+**Still open**
+- Length and format (Google Slides / PowerPoint / other), and whether to
+  include a live demo.
 
 ---
 
